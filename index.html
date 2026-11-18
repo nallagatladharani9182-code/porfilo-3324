@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N. Dharani | Aspiring Software Developer</title>
+    <meta name="description" content="N. Dharani - B.Tech Student | Aspiring Software Developer | Python & C Programmer. Explore my portfolio, projects, skills and certifications." />
+    <meta name="keywords" content="N. Dharani, portfolio, software developer, Python, C, B.Tech, GITMW College, web developer" />
+    <meta name="author" content="N. Dharani" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="N. Dharani | Aspiring Software Developer" />
+    <meta property="og:description" content="B.Tech Student | Python & C Programmer | Portfolio showcasing projects, skills, and certifications." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourusername.github.io" />
+    <meta property="og:image" content="https://yourusername.github.io/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="N. Dharani | Aspiring Software Developer" />
+    <meta name="twitter:description" content="B.Tech Student | Python & C Programmer" />
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link ref="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader" role="status" aria-label="Loading">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- ===== SCROLL PROGRESS ===== -->
+    <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- ===== PARTICLES CANVAS ===== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#home" class="nav-logo" aria-label="Home">ND<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home" aria-label="Hero section">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for opportunities
+                </div>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name"><span>N. Dharani</span></h1>
+                <p class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                </p>
+                <p class="hero-desc">
+                    B.Tech Student | Aspiring Software Developer | Passionate about building efficient software solutions and solving complex problems with code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:nallagatladharani9182@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918008311752" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="profile-circle">
+                        <img src="photo.jpeg" alt="N. Dharani Profile Photo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" aria-label="About me">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">Know Me <span>Better</span></h2>
+                <p class="section-desc">A passionate developer dedicated to crafting clean and efficient code.</p>
+            </div>
+        </div>
+        <div class="container about-inner">
+            <div class="about-image reveal-left">
+                <div class="about-img-box">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+            </div>
+            <div class="about-content reveal-right">
+                <h3>Who <span>Am I?</span></h3>
+                <p>
+                    I am a passionate B.Tech third-year student with strong interest in Software Development.
+                    I enjoy solving programming problems, learning new technologies, and building useful applications.
+                </p>
+                <p>
+                    Currently improving my skills in Python, C, Git, GitHub, Data Structures, DBMS, and Operating Systems.
+                    My goal is to become a Software Engineer.
+                </p>
+                <div class="about-info">
+                    <div class="about-info-item">
+                        <span class="label">Name:</span>
+                        <span class="value">N. Dharani</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="label">Email:</span>
+                        <span class="value">nallagatladharani9182@gmail.com</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="label">Phone:</span>
+                        <span class="value">+91 8008311752</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="label">Location:</span>
+                        <span class="value">Kothapalli, AP, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" aria-label="Skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Skills</span>
+                <h2 class="section-title">My <span>Expertise</span></h2>
+                <p class="section-desc">Technologies and skills I've been working with.</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Python</span>
+                            <span class="percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">C</span>
+                            <span class="percent">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Subjects -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-brain"></i> Core Subjects</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Data Structures</span>
+                            <span class="percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">OOP</span>
+                            <span class="percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">DBMS</span>
+                            <span class="percent">72%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="72"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Operating Systems</span>
+                            <span class="percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">VS Code</span>
+                            <span class="percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Git</span>
+                            <span class="percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">GitHub</span>
+                            <span class="percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Problem Solving</span>
+                            <span class="percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Fast Learner</span>
+                            <span class="percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Teamwork</span>
+                            <span class="percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Communication</span>
+                            <span class="percent">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name">Time Management</span>
+                            <span class="percent">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" aria-label="Education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Education</span>
+                <h2 class="section-title">My Academic <span>Background</span></h2>
+                <p class="section-desc">My educational journey in computer science.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="year">2022 - Present</span>
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <p>GITMW College · Third Year</p>
+                        <p style="margin-top:8px;color:var(--text-muted);font-size:13px;">
+                            Pursuing a degree in Computer Science with focus on software development and programming.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="year">2020 - 2022</span>
+                        <h3>Higher Secondary Education</h3>
+                        <p>Board of Intermediate Education, Andhra Pradesh</p>
+                        <p style="margin-top:8px;color:var(--text-muted);font-size:13px;">
+                            Completed intermediate education with a focus on Mathematics, Physics, and Chemistry.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="year">2020</span>
+                        <h3>Secondary School Education</h3>
+                        <p>Board of Secondary Education, Andhra Pradesh</p>
+                        <p style="margin-top:8px;color:var(--text-muted);font-size:13px;">
+                            Completed secondary education with distinction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section id="certifications" aria-label="Certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Certifications</span>
+                <h2 class="section-title">My <span>Credentials</span></h2>
+                <p class="section-desc">Professional certifications that validate my skills.</p>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card reveal-scale">
+                    <div class="cert-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python Programming</h3>
+                    <p>Certified in Python programming fundamentals and application development.</p>
+                </div>
+                <div class="cert-card reveal-scale">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <h3>C Programming</h3>
+                    <p>Certified in C programming covering data types, pointers, memory management, and algorithms.</p>
+                </div>
+                <div class="cert-card reveal-scale">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h3>DBMS Fundamentals</h3>
+                    <p>Certified in database management systems, SQL queries, and database design principles.</p>
+                </div>
+                <div class="cert-card reveal-scale">
+                    <div class="cert-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git & GitHub</h3>
+                    <p>Certified in version control workflows, collaboration, and repository management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" aria-label="Projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Projects</span>
+                <h2 class="section-title">Featured <span>Work</span></h2>
+                <p class="section-desc">A collection of projects I've built during my learning journey.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Student Management System</h3>
+                        <p>A comprehensive system to manage student records, attendance, and grades with an intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Python Calculator</h3>
+                        <p>A feature-rich calculator application supporting basic arithmetic, scientific functions, and history tracking.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>Math</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Weather App</h3>
+                        <p>A real-time weather application that displays current conditions, forecasts, and location-based weather data.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>API</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive developer portfolio built with HTML, CSS, and JavaScript showcasing technical skills and projects.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>To-Do App</h3>
+                        <p>A task management application with features like categories, priorities, due dates, and persistent local storage.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Library Management System</h3>
+                        <p>A complete library management solution with book cataloging, member management, and borrowing/returning workflows.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS SECTION ===== -->
+    <section id="achievements" aria-label="Achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Achievements</span>
+                <h2 class="section-title">My <span>Milestones</span></h2>
+                <p class="section-desc">Some of the accomplishments I'm proud of.</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal-scale">
+                    <div class="number counter" data-target="10">0</div>
+                    <p>+ Projects Completed</p>
+                </div>
+                <div class="achievement-card reveal-scale">
+                    <div class="number counter" data-target="4">0</div>
+                    <p>+ Professional Certifications</p>
+                </div>
+                <div class="achievement-card reveal-scale">
+                    <div class="number counter" data-target="500">0</div>
+                    <p>+ Problems Solved</p>
+                </div>
+                <div class="achievement-card reveal-scale">
+                    <div class="number counter" data-target="3">0</div>
+                    <p>+ Years of Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOBBIES SECTION ===== -->
+    <section id="hobbies" aria-label="Hobbies">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Hobbies & Interests</span>
+                <h2 class="section-title">Beyond <span>the Code</span></h2>
+                <p class="section-desc">What I enjoy doing in my free time.</p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;">
+                <div class="cert-card reveal" style="text-align:center;">
+                    <div class="cert-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Reading Books</h3>
+                    <p>Exploring technical books, self-improvement, and fiction to broaden knowledge and perspective.</p>
+                </div>
+                <div class="cert-card reveal" style="text-align:center;">
+                    <div class="cert-icon"><i class="fas fa-keyboard"></i></div>
+                    <h3>Coding</h3>
+                    <p>Passionate about building side projects, solving coding challenges, and learning new technologies.</p>
+                </div>
+                <div class="cert-card reveal" style="text-align:center;">
+                    <div class="cert-icon"><i class="fas fa-language"></i></div>
+                    <h3>Languages</h3>
+                    <p>Fluent in English and Telugu, enabling effective communication across diverse teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" aria-label="Contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Contact</span>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-desc">Have a question or want to work together? Let's connect!</p>
+            </div>
+            <div class="contact-content-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nallagatladharani9182@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8008311752</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kothapalli, Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourusername</p>
+                        </div>
+                    </div>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Kothapalli, Andhra Pradesh, India</p>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right" id="contact-form" novalidate>
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label for="form-name">Your Name</label>
+                        <input type="text" id="form-name" name="name" placeholder="Enter your name" required autocomplete="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Your Email</label>
+                        <input type="email" id="form-email" name="email" placeholder="Enter your email" required autocomplete="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Subject</label>
+                        <input type="text" id="form-subject" name="subject" placeholder="Enter subject" />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" name="message" placeholder="Write your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="year"></span> N. Dharani. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:nallagatladharani9182@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
